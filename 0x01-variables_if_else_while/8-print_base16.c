@@ -2,14 +2,17 @@
 
 /**
  * main - entry point
- * Return: 0 always (success)
+ * return: always 0 (success)
  */
 int main(void)
 {
 	char i;
+	char a;
 
-	for (i = 'a'; i < 'z'; i++)
+	for (i = '0'; i <= '9'; i++)
 		putchar(i);
+	for(a = 'a'; a <= 'f'; a++)
+		putchar(a);
 	putchar('\n');
 	return (0);
 }
