@@ -27,7 +27,7 @@ void print_num(int num)
 		{
 			_putchar((abs(num / 10) / 10) + '0');
 			_putchar((abs(num / 10) % 10) + '0');
-			_putchar((num % 10) + '0');
+			_putchar(abs(num % 10) + '0');
 		}
 	}
 }
