@@ -13,18 +13,17 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char *retVal = dest;
+	char *retVal;
 	int len = 0;
-	int i = 0;
-	
-	while (*src)
-		len++;
 
-	while (i <= len)
+	retVal = dest;
+
+	while (*src)
 	{
 		*dest++ = *src++;
-		i++;
+		len++;
 	}
+	dest[len] = '\0';
 
 	return (retVal);
 }
