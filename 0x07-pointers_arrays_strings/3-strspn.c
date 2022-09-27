@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -13,18 +14,19 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int c;
-	int i, j;
 
-	for (i = 0; s[i] != '\0'; i++)
+	c = 0;
+
+	for (; *s != '\0'; s++)
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		for (; *accept != '\0'; accept++)
 		{
-			if (s[i] == accept[j])
+			if (*s == *accept)
 			{
 				c++;
 				break;
 			}
-			else if (c > 0 && accept[j + 1] == '\0')
+			else if ((c > 0) && (*(accept + 1) == '\0'))
 				return (c);
 		}
 	}
