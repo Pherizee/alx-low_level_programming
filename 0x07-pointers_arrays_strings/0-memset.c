@@ -13,9 +13,8 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	char *mem;
+	char *mem = s;
 
-	mem = s
 	while (n--)
 	{
 		*s++ = b;
