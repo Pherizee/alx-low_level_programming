@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt: find the natural square-root of a number
+ * _sqrt - find the natural square-root of a number
  *
  * @n: input number
  * @i: counter
@@ -20,7 +20,7 @@ int _sqrt(int n, int i)
 
 
 /**
- * _sqrt_recursion: find the natural square-root of a number
+ * _sqrt_recursion - find the natural square-root of a number
  *
  * @n: input number
  * Return: sqrt value or -1 is non existent
