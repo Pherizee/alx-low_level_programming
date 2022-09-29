@@ -16,7 +16,7 @@ int is_prime_number(int n)
 	if (n % 2 == 0)
 		return (0);
 
-	return(is_prime(n, 3));
+	return (is_prime(n, 3));
 }
 
 /**
