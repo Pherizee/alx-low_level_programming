@@ -1,18 +1,26 @@
-#include <ctype.h>
+#include "main.h"
 
 /**
  * _isalpha- function checks if the input is an alphabet
  * @c: unsigned input char
  * Return: 1 if alphabet and 0 if not
  */
+
 int _isalpha(int c)
 {
-	int out;
+	int alpha;
 
-	out = isalpha(c);
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	{
+		if (alpha == c)
+			return (1);
+	}
 
-	if (out != 0)
-		return (1);
-	else
-		return (0);
+	for (alpha = 'A'; alpha <= 'Z'; alpha++)
+	{
+		if (c == alpha)
+			return (1);
+	}
+	
+	return (0);
 }
