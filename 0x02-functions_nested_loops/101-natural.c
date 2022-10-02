@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - sum all multiples of 3 and 5 up to 1024
@@ -18,5 +19,5 @@ int main(void)
 			sum += i;
 	}
 
-	return (sum);
+	printf("%\n", sum);
 }
