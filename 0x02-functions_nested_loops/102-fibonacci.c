@@ -8,22 +8,22 @@
 
 int main(void)
 {
-	int i, j, c;
-	unsigned int fib;
+	int c;
+	unsigned long int fib, i, j;
 
 	i = 1;
 	j = 2;
 
-	printf("%d, ", i);
-	printf("%d, ", j);
+	printf("%lu, ", i);
+	printf("%lu, ", j);
 	
 	for (c = 0; c < 48; c++)
 	{
 		fib = i + j;
 		if (c == 47)
-			printf("%u\n", fib);
+			printf("%lu\n", fib);
 		else
-			printf("%u, ", fib);
+			printf("%lu, ", fib);
 		i = j;
 		j = fib;
 	}
