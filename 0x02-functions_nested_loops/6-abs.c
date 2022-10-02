@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * _abs - computes the absolute value of input
@@ -7,8 +7,8 @@
  */
 int _abs(int n)
 {
-	int absolute;
+	if (n < 0)
+		return (n * (-1));
 
-	absolute = abs(n);
-	return (absolute);
+	return (n);
 }
