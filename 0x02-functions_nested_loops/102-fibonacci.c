@@ -16,7 +16,7 @@ int main(void)
 
 	printf("%lu, ", i);
 	printf("%lu, ", j);
-	
+
 	for (c = 0; c < 48; c++)
 	{
 		fib = i + j;
