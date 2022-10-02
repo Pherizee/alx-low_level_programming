@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - sum all multiples of 3 and 5 up to 1024
+ * main - print sum all multiples of 3 and 5 up to 1024
  *
- * Return: sum
+ * Return: 1 for success
  */
 
 int main(void)
@@ -20,5 +20,5 @@ int main(void)
 	}
 
 	printf("%d\n", sum);
-	return (sum);
+	return (1);
 }
