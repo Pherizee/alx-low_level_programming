@@ -4,7 +4,7 @@
 /**
  * main - print sum all multiples of 3 and 5 up to 1024
  *
- * Return: 1 for success
+ * Return: always 0
  */
 
 int main(void)
@@ -20,5 +20,5 @@ int main(void)
 	}
 
 	printf("%d\n", sum);
-	return (1);
+	return (0);
 }
