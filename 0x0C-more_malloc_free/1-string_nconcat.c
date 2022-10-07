@@ -7,6 +7,7 @@
  *
  * @s1: string1
  * @s2: string2
+ * @n: number of bytes of s2 to be used
  *
  * Return: pointer to newly allocated space
  */
