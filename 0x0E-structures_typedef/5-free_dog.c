@@ -8,10 +8,9 @@
  * Return: nothing
  */
 
-void free_dof(dog_t *d)
+void free_dog(dog_t *d)
 {
 	free(d->name);
-	free(d->age);
 	free(d->owner);
-	free(dog);
+	free(d);
 }
