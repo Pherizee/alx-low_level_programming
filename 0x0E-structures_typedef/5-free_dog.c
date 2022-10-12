@@ -10,5 +10,8 @@
 
 void free_dof(dog_t *d)
 {
-	free(d);
+	free(d->name);
+	free(d->age);
+	free(d->owner);
+	free(dog);
 }
