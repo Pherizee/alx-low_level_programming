@@ -14,10 +14,7 @@
 int main(int argc, char *argv[])
 {
 	int (*op_func)(int, int);
-
-	char *op = (char *)argv[2];
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
+	int a, b;
 
 	if (argc != 4)
 	{
@@ -25,14 +22,17 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	op_func = get_op_func(op);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+
+	op_func = get_op_func(argv[2]);
 	if (op_func == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((*op == '/' || *op == '%') && (b == 0))
+	if ((*argv[2] == '/' || *argv[2] == '%') && (b == 0))
 	{
 		printf("Error\n");
 		exit(100);
