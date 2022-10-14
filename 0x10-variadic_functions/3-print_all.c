@@ -18,6 +18,12 @@ void print_all(const char * const format, ...)
 	char f;
 	va_list args;
 
+	while (format == NULL)
+	{
+		printf("\n");
+		return;
+	}
+
 	format_len = strlen(format);
 	va_start(args, format);
 
@@ -51,7 +57,7 @@ void print_action(char f, va_list args, int i, int len)
 	switch (f)
 	{
 		case 'c':
-			char_var = va_arg(args, int);
+			char_var = (char) va_arg(args, int);
 			printf("%c", char_var);
 			separate(i, len);
 			break;
@@ -61,7 +67,7 @@ void print_action(char f, va_list args, int i, int len)
 			separate(i, len);
 			break;
 		case 'f':
-			float_var = va_arg(args, double);
+			float_var = (float) va_arg(args, double);
 			printf("%f", float_var);
 			separate(i, len);
 			break;
