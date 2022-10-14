@@ -76,6 +76,7 @@ void print_action(char f, va_list args, int i, int len)
 			if (string == NULL)
 			{
 				printf("(nil)");
+				separate(i, len);
 				break;
 			}
 			printf("%s", string);
