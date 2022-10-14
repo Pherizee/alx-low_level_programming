@@ -25,7 +25,7 @@ void print_all(const char * const format, ...)
 	while (i < format_len)
 	{
 		f = format[i];
-		print_action(f, args, i, format_len);		
+		print_action(f, args, i, format_len);
 		i++;
 	}
 	printf("\n");
@@ -67,10 +67,12 @@ void print_action(char f, va_list args, int i, int len)
 			break;
 		case 's':
 			string = va_arg(args, char *);
-			if (string != NULL)
-				printf("%s", string);
-			else
+			if (string == NULL)
+			{
 				printf("(nil)");
+				break;
+			}
+			printf("%s", string);
 			separate(i, len);
 			break;
 		default:
@@ -78,7 +80,7 @@ void print_action(char f, va_list args, int i, int len)
 	}
 }
 
-/*
+/**
  * separate - prints separator to strings
  *
  * @i: position of string
