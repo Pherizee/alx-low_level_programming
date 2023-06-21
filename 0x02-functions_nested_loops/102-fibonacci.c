@@ -25,7 +25,7 @@ int main(void)
 		if (c == 47)
 			printf("\n");
 		else
-			printf(" ");
+			printf(", ");
 		i = j;
 		j = fib;
 	}
