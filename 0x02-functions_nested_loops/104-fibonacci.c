@@ -17,10 +17,10 @@ int main(void)
 	printf("%.0f, ", i);
 	printf("%.0f, ", j);
 
-	for (c = 0; c < 96; c++)
+	for (c = 0; c < 98; c++)
 	{
 		fib = i + j;
-		if (c == 95)
+		if (c == 97)
 			printf("%.0f\n", fib);
 		else
 			printf("%.0f, ", fib);

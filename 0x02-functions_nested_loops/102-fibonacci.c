@@ -23,9 +23,9 @@ int main(void)
 		printf("%lu", fib);
 
 		if (c == 47)
-			printf('\n');
+			printf("\n");
 		else
-			printf(' ');
+			printf(" ");
 		i = j;
 		j = fib;
 	}
