@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 void print_num(int num);
 
@@ -37,20 +38,20 @@ void print_num(int num)
 	if (num < 0)
 		_putchar('-');
 
-	if (_abs(num) > 10)
+	if (abs(num) > 9)
 	{
-		if (_(abs(num) / 10) < 10)
-			_putchar(_abs(num / 10) + '0');
+		if ((abs(num) / 10) < 10)
+			_putchar(abs(num / 10) + '0');
 		else
 		{
-			_putchar((_abs(num / 10) / 10) + '0');
-			_putchar((_abs(num / 10) % 10) + '0');
+			_putchar((abs(num / 10) / 10) + '0');
+			_putchar((abs(num / 10) % 10) + '0');
 		}
 	}
 	
-	_putchar((_abs(num) % 10) + '0');
+	_putchar((abs(num) % 10) + '0');
 	
-	if (n != 98)
+	if (num != 98)
 	{
 		_putchar(',');
 		_putchar(' ');
