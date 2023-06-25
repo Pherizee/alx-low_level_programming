@@ -8,38 +8,21 @@
 
 int main(void)
 {
-	int i = 1;
+	unsigned long int i, primeNum;
 	unsigned long int num = 612852475143;
 
-	while (i++)
+	while (num % 2 == 0)
+		num /= 2;
+
+	for (i = 3; i < num / 2; i += 2)
 	{
-		if (i != 2 && i % 2 == 0)
-			continue;
-
-		else if (i != 3 && i % 3 == 0)
-			continue;
-
-		else if (i != 5 && i % 5 == 0)
-			continue;
-
-		else if (i != 7 && i % 7 == 0)
-			continue;
-
 		if (num % i == 0)
 		{
-			printf("%d", i);
 			num /= i;
-
-			if (num == 1)
-			{
-				printf("\n");
-				break;
-			}
-
-			printf(", ");
-			i = 1;
+			primeNum = i;
 		}
 	}
 
+	printf("%ld\n", primeNum);
 	return (0);
 }
