@@ -34,7 +34,7 @@ void print_num(int n)
 
 	n = abs(n);
 
-	divisor = 1000000000;
+	divisor = 10000000000;
 	while (divisor >= 1)
 	{
 		if (n / divisor != 0)
