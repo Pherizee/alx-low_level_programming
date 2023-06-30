@@ -21,7 +21,7 @@ void print_number(int n)
 
 void print_num(int n)
 {
-	int divisor;
+	long int divisor;
 
 	if (n == 0)
 	{
