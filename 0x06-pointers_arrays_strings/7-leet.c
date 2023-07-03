@@ -14,7 +14,7 @@ char *leet(char *str)
 
 	while (str[i])
 	{
-		for (; j < 10; i++)
+		for (; j < 10; j++)
 		{
 			if (str[i] == alpha[j])
 				str[i] = code[j];
